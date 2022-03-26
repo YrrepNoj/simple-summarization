@@ -11,7 +11,7 @@ Resources:
   SimpleSummarizationFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: lambda-functions
+      CodeUri: ../
       Handler: lambda_function.lambda_handler
       Runtime: python3.8
       Architectures:
