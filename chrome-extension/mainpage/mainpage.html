@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Summarization</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <script src="mainpage.js"></script>
+
+  </head>
+  <body>
+
+
+  <div class="summ" id="summ">
+    <h1>Simple Summarization</h1>
+
+    <div class="summGrid">
+      <div class="rightGrid">
+        <button id="summarizeButton" class="summarizeButton">Summarize!</button>
+      </div>
+    </div>
+    <p id="error" class="error"></p>
+    <p id="success" class="success"></p>
+    <div id="spinner" class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+
+    <div>
+      <label> <input type="checkbox" id="heatmapCheckbox"> Show Heatmap</label>
+    </div>
+
+    <h3>Summarized Text</h3>
+    <div id="summarization_contents" class="summarization_contents">
+      <ol id="summarization_texts" class="summarization_texts">
+
+      </ol>
+
+    </div>
+  </div>
+
+  </body>
+</html>
