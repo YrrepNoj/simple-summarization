@@ -1,16 +1,14 @@
-Name: Python Lambda Deployment
+name: Python Lambda Deployment
+
 on:
   pull_request
-  push:
-    branches:
-      - master
 
 jobs:
   deploy-lambda:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2ls
+      - uses: actions/setup-python@v2
       - uses: aws-actions/setup-sam@v1
       - uses: aws-actions/configure-aws-credentials@v1
         with:
