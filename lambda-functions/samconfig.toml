@@ -1,0 +1,12 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "summarizer-sam-app"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-gycyccuz1ub3"
+s3_prefix = "summarizer-sam-app"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = []
