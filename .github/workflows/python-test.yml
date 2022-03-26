@@ -1,0 +1,22 @@
+name: Run Python Tests
+on:
+  pull_request
+
+jobs:
+  test-python:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+
+      - name: Download Dependencies
+        run: pip install -r ./lambda-functions/requirements.txt
+
+      - name: Run Tests
+        run: python ./lambda-functions/test_get_article_contents.py
