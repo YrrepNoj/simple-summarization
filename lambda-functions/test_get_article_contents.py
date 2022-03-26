@@ -9,6 +9,7 @@ class TestGetArticleContents(unittest.TestCase):
         self.assertIsNotNone(article.text)
         self.assertIsNotNone(article.title)
         self.assertIsNotNone(article.url)
+        self.assertIsNotNone(article.summary)
 
 
     def test_invalid_request(self):
