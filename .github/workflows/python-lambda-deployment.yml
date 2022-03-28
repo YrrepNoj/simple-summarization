@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'lambda-functions/**'
 
 jobs:
   deploy-lambda:
